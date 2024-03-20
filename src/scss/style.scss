@@ -1,0 +1,85 @@
+/*Шрифты
+=======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*Стандартные настройки страницы 
+=======================================*/
+
+html {font-family: "Roboto"; font-weight: 300; overflow-x: hidden;}
+body {position: relative; margin: 0; padding: 0; overflow-x: hidden; background-color: #fff6ee; max-width: 100vw}
+* {box-sizing: border-box;}
+a {text-decoration: none;}
+p {margin: 0;user-select: none;}
+input::placeholder {font-family: "Roboto"; font-weight: 200; color: rgba(255, 255, 255, 0.70); font-size: 18px;}
+textarea::placeholder {font-family: "Roboto"; font-weight: 200; color: rgba(255, 255, 255, 0.70); font-size: 18px;}
+h1,h2,h3,h4,h5,h6 {font-weight: inherit; font-size: inherit; user-select: none; margin: 0;padding: 0;}
+ul[class],ol[class] {list-style: none; margin: 0; padding: 0;}
+.uncor {position: absolute; top: 20px; left: 0;}
+#main {top: 0;}
+img {pointer-events: none}
+button {background: none; border: none; padding: 0; -webkit-tap-highlight-color: transparent;}
+.overflow-lock {overflow-y: hidden;}
+
+//Миксины   --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "functions/mixins";
+
+//Основной блок сайта   -----------------------------------------------------------------------------------------------------------------------------------------
+
+@import "UI/Main";
+
+//Обертка сайта  -------------------------------------------------------------------------------------------------------------------------------
+
+@import "UI/Wrapper";
+
+/*АЛЛЕРТ ФОРМЫ
+=======================================*/
+
+@import "components/Alerts";
+
+/*ШАПКА САЙТА
+=======================================*/
+
+@import "components/Header";
+
+/*БЛОК-1
+=======================================*/
+
+@import "components/Section-1";
+
+/*БЛОК-2
+=======================================*/
+
+@import "components/Section-2";
+
+/*БЛОК-3
+=======================================*/
+
+@import "components/Section-3";
+
+/*БЛОК-4
+=======================================*/
+
+@import "components/Section-4";
+
+/*ПОДВАЛ САЙТА
+=======================================*/
+
+@import "components/Footer";
+
+/*КОРЗИНА
+=======================================*/
+
+@import "components/Layout";
+@import "components/Cart";
+
+/*МОБИЛЬНОЕ МЕНЮ
+=======================================*/
+
+@import "UI/MenuNav";
+
+/*ВСПЛЫВАЮЩАЯ КНОПКА КОРЗИНЫ
+=======================================*/
+
+@import "UI/ButtonCart";

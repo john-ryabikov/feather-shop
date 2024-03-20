@@ -1,0 +1,47 @@
+.button-cart {
+    @include flex-column();
+    position: fixed;
+    bottom: -60px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #00000020;
+    background-color: #ffffff;
+    z-index: 3;
+    transition: all 0.4s;
+    cursor: pointer;
+    &:hover {
+        width: 66px;
+        height: 66px;
+        right: 47px;
+        img {
+            transform: scale(1.05, 1.05);
+        }
+    }
+    &_show {
+       transform: translateY(-110px);
+    }
+    &__icon {
+        transition: all 0.4s;
+    }
+    &__count {
+        @include flex-column();
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 14px;
+        height: 14px;
+        background-color: #ff0000;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .button-cart {
+        display: none;
+    }
+}

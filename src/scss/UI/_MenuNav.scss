@@ -1,0 +1,37 @@
+.menu-nav {
+    @include flex-column();
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 10;
+    border-radius: 0 20px 20px 0;
+    padding-top: 160px;
+    transition: transform 0.4s;
+    &__close-btn {
+        @include flex-column();
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        color: #868686;
+    }
+    &__link {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 125%;
+        color: #000;
+        margin-bottom: 50px;
+        transition: all 0.4s;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.menu-nav-active {
+    transform: translateX(100%);
+}

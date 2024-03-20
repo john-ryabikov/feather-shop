@@ -1,0 +1,98 @@
+.header {
+    //@include border();
+    @include flex-column();
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    &__cont {
+        //@include border();
+        @include flex-row();
+        width: 100%; 
+    }
+    &__menu-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        display: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        color: #868686;
+    }
+    &__nav-first {
+        //@include border();
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+    &__nav-link {
+        //@include border();
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #000;
+        margin-right: 36px;
+        transition: all 0.4s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__cart-btn {
+        //@include border();
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        cursor: pointer;
+    }
+    &__cart-btn-count {
+        @include flex-column();
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 14px;
+        height: 14px;
+        background-color: #ff0000;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .header {
+        box-shadow: 0px 6px 10px -5px rgba(34, 60, 80, 0.35);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 7;
+        &__menu-btn {
+            display: block;
+        }
+        &__nav-first {
+            display: none;
+        }
+        &__logo-icon {
+            width: 100px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+    .header {
+        &__menu-btn {
+            display: block;
+        }
+        &__nav-first {
+            display: none;
+        }
+    }
+} 
