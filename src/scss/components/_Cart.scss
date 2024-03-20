@@ -11,7 +11,7 @@
     border-radius: 20px 0 0 20px;
     padding-top: 100px;
     padding-bottom: 50px;
-    transition: all 0.4s;
+    transition: transform 0.4s;
     &__close-btn {
         @include flex-column();
         position: absolute;
