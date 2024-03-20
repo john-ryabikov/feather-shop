@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/feather-shop/static/css/main.a2632224.css",
+    "main.css": "/feather-shop/static/css/main.0b375156.css",
     "main.js": "/feather-shop/static/js/main.54847900.js",
     "index.html": "/feather-shop/index.html",
-    "main.a2632224.css.map": "/feather-shop/static/css/main.a2632224.css.map",
+    "main.0b375156.css.map": "/feather-shop/static/css/main.0b375156.css.map",
     "main.54847900.js.map": "/feather-shop/static/js/main.54847900.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2632224.css",
+    "static/css/main.0b375156.css",
     "static/js/main.54847900.js"
   ]
 }
