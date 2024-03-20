@@ -280,6 +280,9 @@
         &__btn-clear-icon {
             width: 12px;
         }
+        &__orders {
+            height: -webkit-fill-available;
+        }
         &__order-img {
             width: 70px;
             margin-right: 20px;
