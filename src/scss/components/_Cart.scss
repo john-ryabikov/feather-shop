@@ -11,7 +11,7 @@
     border-radius: 20px 0 0 20px;
     padding-top: 100px;
     padding-bottom: 50px;
-    transition: transform 0.4s;
+    transition: all 0.4s;
     &__close-btn {
         @include flex-column();
         position: absolute;
@@ -266,7 +266,7 @@
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .cart {
-        height: -webkit-fill-available;
+        min-height: -webkit-fill-available;
         right: -380px;
         width: 380px;
         &__btn-clear {
